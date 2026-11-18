@@ -84,9 +84,10 @@ button:active {
 }
 
 .increase-five {
-    background: #7c3aed;
+    background: linear-gradient(135deg, #f97316, #ea580c);
     width: 100%;
     margin-top: 15px;
+    color: white;
 }
 
 #message {
