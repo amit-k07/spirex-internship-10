@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #101827, #1e1b3a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.counter-card {
+    background: #222b3d;
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #a8b3c7;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+#count {
+    font-size: 75px;
+    font-weight: bold;
+    color: #a78bfa;
+    margin: 20px 0;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.15);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.increase {
+    background: #16a34a;
+}
+
+.decrease {
+    background: #dc4545;
+}
+
+.reset {
+    background: #64748b;
+}
+
+.increase-five {
+    background: #7c3aed;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#message {
+    color: #a8b3c7;
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+@media (max-width: 400px) {
+    .counter-card {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    #count {
+        font-size: 60px;
+    }
+
+    button {
+        padding: 11px 14px;
+    }
+}
